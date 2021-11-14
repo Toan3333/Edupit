@@ -1,0 +1,135 @@
+.testimonial {
+  background-color: $bg-white;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+  &-left {
+    width: calc(50% - 3rem);
+    margin-right: 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+  &-right {
+    width: calc(50% - 3rem);
+    margin-left: 3rem;
+    &-center {
+      text-align: center;
+      margin-bottom: 3rem;
+      span {
+        color: $green;
+        font-size: 1.7rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin-top: 1.6rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+        color: $text-black;
+      }
+
+      h3 {
+        font-size: 3rem;
+        color: $text-black;
+      }
+    }
+  }
+
+  &-social {
+    color: $green;
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  &-desc {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: $grey;
+    margin-bottom: 1.2rem;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 5.9rem;
+      height: 5.9rem;
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      color: $text-black;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $green;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .testimonial {
+    padding-bottom: 5rem;
+    &-left {
+      width: calc(100% - 3rem);
+      margin-bottom: 5rem;
+    }
+
+    &-right {
+      width: calc(100% - 3rem);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonial {
+    padding-bottom: 5rem;
+    &-left {
+      width: calc(100% - 3rem);
+      margin-bottom: 5rem;
+    }
+
+    &-right {
+      width: 100%;
+      margin-left: 0;
+
+      &-center {
+        text-align: center;
+        margin-bottom: 3rem;
+        span {
+          color: $green;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        h2 {
+          margin-top: 1.6rem;
+          font-size: 2.1rem;
+          line-height: 4.5rem;
+          color: $text-black;
+        }
+
+        h3 {
+          font-size: 2.1rem;
+          color: $text-black;
+        }
+      }
+    }
+
+    &-desc {
+      font-size: 1.8rem;
+    }
+
+    &-user {
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

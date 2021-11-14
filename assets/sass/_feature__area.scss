@@ -1,0 +1,49 @@
+.feature__area {
+  padding-bottom: 7rem;
+
+  &-box {
+    width: calc(25% - 3rem);
+    margin-right: 3rem;
+    border-radius: 0.4rem;
+    margin-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    border: 0.1rem solid $green;
+
+    h3 {
+      font-size: 2.2rem;
+      color: $text-black;
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+
+      &:hover {
+        color: $green;
+        transition: 0.3s linear;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      font-size: 1.7rem;
+      color: $grey;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .feature__area {
+    &-box {
+      width: calc(50% - 3rem);
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature__area {
+    &-box {
+      width: 100%;
+    }
+  }
+}

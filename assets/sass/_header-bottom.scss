@@ -1,0 +1,125 @@
+.header-bottom-bg {
+  background-image: url(../img/slider-bg2.jpg);
+  width: 100%;
+  padding-top: 3.2rem;
+  padding-bottom: 20rem;
+
+  &-about {
+    background-image: url(../img/slider5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 40.5rem;
+  }
+
+  .header-bottom {
+    padding: 1.8rem 1.5rem;
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    width: 100%;
+
+    &-center {
+      text-align: center;
+      margin-top: 6rem;
+
+      h3 {
+        font-size: 4rem;
+        color: $white;
+        font-weight: 600;
+      }
+
+      .breadcumb-inner {
+        ul li {
+          display: inline-block;
+
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    &-mobile {
+      display: none;
+    }
+
+    .edupit-menu {
+      color: $white;
+
+      ul.sub-menu li {
+        display: inline-block;
+        margin: 0 1.5rem;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 1.6rem;
+          font-weight: 500;
+
+          &:hover {
+            color: $green;
+            transition: 0.3s linear;
+          }
+        }
+      }
+    }
+
+    .btn-header-bottom {
+      background-color: $green;
+      border-radius: 0.5rem;
+      padding: 1rem 3rem;
+      font-size: 1.8rem;
+
+      &:hover {
+        background-color: $btn-black;
+        transition: 0.3s linear;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-bottom-bg {
+    .edupit-menu {
+      color: $white;
+
+      ul.sub-menu li {
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        a.sub-menu-item {
+          color: $white;
+          text-decoration: none;
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-bottom-bg {
+    .header-bottom {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-bottom-bg {
+    padding-bottom: 10rem;
+  }
+}

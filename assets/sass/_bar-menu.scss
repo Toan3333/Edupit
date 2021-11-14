@@ -1,0 +1,92 @@
+.header-bar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .header-bar-menu {
+    position: relative;
+    display: block;
+    background-color: $green;
+    height: 6rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    line-height: 6rem;
+
+    span {
+      color: $white;
+      float: left;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    i {
+      color: $white;
+      font-size: 2.6rem;
+    }
+
+    .side-bar {
+      float: right;
+    }
+    ul.sub-menu {
+      position: absolute;
+      top: 6rem;
+      width: 100%;
+      background-color: $white;
+      left: 0;
+      display: none;
+
+      li {
+        list-style: none;
+
+        a {
+          padding: 0.2rem 2rem;
+          color: $text-black;
+          font-size: 1.5rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-decoration: none;
+          width: 100%;
+          display: inline-flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 0.1rem solid #ccc;
+
+          i {
+            color: $text-black;
+            font-size: 1.6rem;
+            float: right;
+          }
+        }
+      }
+    }
+    #menu-mobile.active {
+      display: block;
+      animation: identifier 0.4s linear;
+    }
+
+    @keyframes identifier {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  ul.sub-menu {
+    li {
+      list-style: none;
+
+      a.sub-menu-item {
+        padding: 0.2rem 2rem;
+        color: $text-black;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

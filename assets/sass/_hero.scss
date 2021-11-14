@@ -1,0 +1,134 @@
+.hero {
+  margin-top: 8rem;
+
+  &-left {
+    width: calc(50% - 3rem);
+    margin-right: 3rem;
+
+    .hero-title {
+      color: $white;
+      font-size: 6rem;
+      font-weight: 600;
+    }
+
+    .hero-title-2 {
+      color: $white;
+      font-size: 4.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $white;
+      line-height: 3rem;
+      margin-bottom: 4.2rem;
+    }
+
+    .hero-view {
+      &-1 {
+        padding: 1.8rem 3rem;
+        background-color: $green;
+        color: $white;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &-2 {
+        padding: 1.8rem 3rem;
+        border: 0.1rem solid $green;
+        color: $green;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  &-right {
+    width: calc(50% - 3rem);
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    &-left {
+      .hero-title {
+        font-size: 4.5rem;
+      }
+
+      .hero-title-2 {
+        font-size: 3.8rem;
+      }
+      .hero-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    &-left {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-right {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    &-left {
+      .hero-title {
+        font-size: 2.6rem;
+      }
+
+      .hero-title-2 {
+        font-size: 2.5rem;
+      }
+      .hero-text {
+        font-size: 1.8rem;
+      }
+
+      .hero-view {
+        &-1 {
+          padding: 0.8rem 2rem;
+          background-color: $green;
+          color: $white;
+          font-size: 1.8rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 0.5rem;
+          margin-right: 1rem;
+        }
+
+        &-2 {
+          padding: 0.8rem 2rem;
+          border: 0.1rem solid $green;
+          color: $green;
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

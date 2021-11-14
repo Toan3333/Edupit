@@ -1,0 +1,43 @@
+.counter-area {
+  background-image: url(../img/slider-bg2.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  background-position: center center;
+
+  &-box {
+    width: calc(25% - 3rem);
+    margin-right: 3rem;
+    text-align: center;
+    padding-top: 3.7rem;
+    padding-bottom: 6.1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $white;
+    color: $white;
+
+    &-icon {
+      font-size: 5.5rem;
+      color: $white;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+      font-weight: 500;
+    }
+
+    span {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .counter-area {
+    &-box {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.newsletter {
+  background-color: $green;
+  border-radius: 1rem;
+  padding: 7.3rem 3rem 6.3rem;
+
+  &-pos {
+    position: relative;
+    top: 12rem;
+  }
+
+  &-content {
+    width: calc(50% - 3rem);
+    margin-right: 3rem;
+    h2 {
+      font-size: 4rem;
+      color: $white;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.7rem;
+      color: $white;
+      font-weight: 400;
+    }
+  }
+
+  &-form {
+    width: calc(50% - 3rem);
+    margin-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    input {
+      padding: 1.5rem 3rem;
+      color: $grey;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1.6rem;
+      width: 100%;
+    }
+
+    button {
+      position: absolute;
+      padding: 1.5rem 3rem;
+      background-color: $btn-black;
+      border: none;
+      border-radius: 0.5rem;
+      color: $white;
+      font-size: 1.6rem;
+      width: 30%;
+      right: 3rem;
+      top: 1.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .newsletter {
+    &-content {
+      width: 100%;
+    }
+
+    &-form {
+      width: 100%;
+      margin-top: 3rem;
+
+      button {
+        top: 0rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter {
+    &-content {
+      width: 100%;
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    &-form {
+      width: 100%;
+      margin-top: 3rem;
+      flex-direction: column;
+      margin-left: 0;
+
+      button {
+        width: 100%;
+        position: unset;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

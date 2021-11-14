@@ -1,0 +1,133 @@
+.about {
+  padding-bottom: 9rem;
+  &-left {
+    width: calc(50% - 3rem);
+    margin-right: 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-right {
+    width: calc(50% - 3rem);
+    margin-left: 3rem;
+    h2 {
+      font-size: 1.6rem;
+      color: $green;
+      font-weight: 700;
+      margin-bottom: 1.3rem;
+    }
+
+    h3 {
+      font-size: 4rem;
+      color: $text-black;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      line-height: 5rem;
+    }
+
+    .about-right-heading {
+      padding: 0 0 1rem 1rem;
+      border-style: solid;
+      border-width: 0 0 0 0.3rem;
+      border-color: $green;
+      h2 {
+        color: $grey;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    .about-right-contact {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+
+      p {
+        font-size: 1.7rem;
+        color: $grey;
+      }
+    }
+
+    .about-right-section-title {
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+
+    .about-right-slide {
+      img {
+        margin: 0 1.6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    padding-bottom: 5rem;
+    padding-bottom: 5rem;
+    &-right {
+      padding-right: 1.5rem;
+
+      &-slide {
+        img {
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about {
+    &-left {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &-right {
+      width: 100%;
+
+      h3 {
+        font-size: 3.2rem;
+      }
+    }
+
+    .about-right-contact {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    &-left {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &-right {
+      width: 100%;
+      margin-left: 0;
+
+      h3 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+      }
+
+      .about-right-slide {
+        img {
+          margin: 1rem 1.6rem;
+        }
+      }
+    }
+
+    .about-right-contact {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
